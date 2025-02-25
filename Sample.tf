@@ -1,10 +1,13 @@
-provider "aws" {
-  region = "us-east-1"
-}
-resource "aws_instance" "Sample" {
-  ami= "ami-05b10e08d247fb927"
-  instance_type = "t2.micro"
-  tags= {
-    Name= "terraform"
+terraform {
+  required_providers {
+    local = {
+      source  = "hashicorp/local"
+      version = "2.5.2"
+    }
   }
+}
+provider "local" {}
+resource "local_file" "first" {
+  content = "Boss raa lucha"
+  filename = "/tmp/anki"
 }
