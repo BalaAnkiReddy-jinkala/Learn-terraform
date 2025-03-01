@@ -34,3 +34,13 @@ output "y1" {
 output "z" {
   value = "name=${var.z["name"]},age=${var.z["age"]}"
 }
+
+variable "class" {}
+output "class" {
+  value = "var.class"
+}
+
+variable "trainer" {}
+output "trainer" {
+  value = "var.trainer"
+}
