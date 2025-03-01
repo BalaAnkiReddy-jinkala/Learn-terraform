@@ -16,7 +16,7 @@ variable "x" {
   default = 10
 }
 variable "y" {
-  default = [1,"anki",4.43,boss]
+  default = [1,"anki",4.43,"boss"]
 }
 
 variable "z" {
