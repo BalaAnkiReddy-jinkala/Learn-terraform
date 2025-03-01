@@ -37,10 +37,10 @@ output "z" {
 
 variable "class" {}
 output "class" {
-  value = "var.class"
+  value = var.class
 }
 
 variable "trainer" {}
 output "trainer" {
-  value = "var.trainer"
+  value = var.trainer
 }
