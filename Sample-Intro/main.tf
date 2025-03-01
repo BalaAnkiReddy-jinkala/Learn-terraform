@@ -17,5 +17,5 @@ variable "x" {
 }
 
 output "x" {
-  value = "value of x .$var.x"
+  value = "value of x .${var.x}"
 }
