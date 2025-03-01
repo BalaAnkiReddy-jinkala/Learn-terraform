@@ -11,3 +11,11 @@ resource "local_file" "anki" {
   content = "Hello to everyone"
   filename = "/tmp/bala"
 }
+
+variable "x" {
+  default = 10
+}
+
+output "x" {
+  value = "value of x .$var.x"
+}
